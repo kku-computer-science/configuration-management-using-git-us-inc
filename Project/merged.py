@@ -6,9 +6,7 @@ def quick_sort(arr):
     right = [x for x in arr[1:] if x >= pivot]
     return quick_sort(left) + [pivot] + quick_sort(right)
 
-arr = [1, 7, 4, 1, 10, 9, -2]
-arr = quick_sort(arr)
-print(arr)def bubble_sort(arr):
+def bubble_sort(arr):
 
     arr = arr.copy()
     n = len(arr)
@@ -19,6 +17,7 @@ print(arr)def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
     return arr
+
 number_to_sort = input("Please Enter the Number(Serperate by space): ")
 nums = list(map(int, number_to_sort.split(" ")))
 
